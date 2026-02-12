@@ -108,3 +108,7 @@ If mismatch → `residue_error = 1`
 # 🔎 Multi-Level Error Decision
 
 Final fault signal:
+error_flag = parity_error 
+           | carry_error 
+           | residue3_error 
+           | residue5_error;
