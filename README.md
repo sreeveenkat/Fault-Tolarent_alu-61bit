@@ -1,6 +1,8 @@
 # 🔐 Fault-Tolerant ALU  
 ### Multi-Level Error Detection using Parity Prediction, Carry Checking & Residue Codes (mod-3 / mod-5)
 
+✔ Full RTL → GDSII implementation using Cadence Innovus  
+
 This project implements a **Fault-Tolerant Arithmetic Logic Unit (ALU)** in SystemVerilog with multiple parallel error detection techniques designed for reliable digital systems.
 
 ---
@@ -87,7 +89,7 @@ If invalid relation → `carry_error = 1`
 
 #### 🔹 Residue Code Checking (mod-3 & mod-5)
 
-For addition:
+For addition: (A + B) mod m == (A mod m + B mod m) mod m
 
 
 Where `m = 3 or 5`
@@ -112,7 +114,7 @@ error_flag = parity_error
            | carry_error 
            | residue3_error 
            | residue5_error;
-
+🏭 RTL → GDSII Design Flow
 SystemVerilog RTL
         ↓
 Functional Simulation
@@ -133,28 +135,31 @@ Physical Verification (DRC/LVS)
         ↓
 GDSII Generation
 
-├── rtl/
-├── testbench/
-├── simulation_results/
-├── synthesis/
-├── floorplan/
-├── placement/
-├── cts/
-├── routing/
-├── signoff/
-├── gds/
-└── README.md
+📊 Physical Design Results
+📐 Area
+Total Cell Area : 6868.11 µm²
+Total Instances : 979 cells
+⚡ Timing
+Clock Frequency : 100 MHz
+Worst Setup Slack : +0.061 ns ✅
+Timing Status : Met
+🧪 Verification
+DRC Violations : 0 ✅
+Connectivity : Clean ✅
+🔌 Power
+Supply Voltage : 0.9V
+⚠ Power net connection warnings observed (requires globalNetConnect refinement)
 
+🧪 Fault Coverage
+Parity → detects bit-level errors
+Carry checking → detects arithmetic faults
+Residue codes → detects multi-bit errors
 
----
+✔ Combined approach significantly improves fault detection coverage
 
-🔥 Now this is:
-- Clean ✔️  
-- Professional ✔️  
-- Recruiter-ready ✔️  
-- GitHub-perfect formatting ✔️  
-
----
-
-If you want next:
-👉 I’ll give you **resume bullets that guarantee shortlist for RTL roles**
+🧰 Tools & Technologies
+RTL Design : Verilog
+Simulation : ModelSim / XSIM
+Synthesis : Cadence / Synopsys / Vivado
+Physical Design : Cadence Innovus
+Verification : Custom Testbench
