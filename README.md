@@ -150,8 +150,9 @@ Connectivity : Clean ✅
 Supply Voltage : 0.9V
 ⚠ Power net connection warnings observed (requires globalNetConnect refinement)
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1b09e07e-c886-4b31-86c0-03c3a013c851" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1b09e07e-c886-4b31-86c0-03c3a013c851" width="800"/>
+</p>
 
 🧪 Fault Coverage
 Parity → detects bit-level errors
