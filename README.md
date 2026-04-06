@@ -150,6 +150,9 @@ Connectivity : Clean ✅
 Supply Voltage : 0.9V
 ⚠ Power net connection warnings observed (requires globalNetConnect refinement)
 
+![Uploading image.png…]()
+
+
 🧪 Fault Coverage
 Parity → detects bit-level errors
 Carry checking → detects arithmetic faults
