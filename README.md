@@ -25,9 +25,8 @@ This project implements a **Fault-Tolerant Arithmetic Logic Unit (ALU)** in Syst
 
 ---
 
-## 🏗 Architecture Diagram
 
-![Fault Tolerant ALU](https://github.com/user-attachments/assets/0f08a08c-4b6c-4635-a4a8-51df241f3ad9)
+![gds_diagram](https://github.com/user-attachments/assets/5c6b9814-bf1e-4e71-aea1-27a68fe0a3e3)
 
 ---
 
